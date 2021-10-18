@@ -21,7 +21,7 @@ bool ok(int q[], int c) {
          return false;
 
    for (int i = 0; adj[c][i] != -1; ++i) // For each neighbor of square c,
-      if (abs(q[c] - q[adj[c][i]]) == 1) // if the numbers written in square c and the neighbor differ by 1, return false.
+      if (abs(q[c] - q[adj[c][i]]) == 1) // If the numbers written in square c and the neighbor differ by 1, return false.
          return false;
    return true;
 }
